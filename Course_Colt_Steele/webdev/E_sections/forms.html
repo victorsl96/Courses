@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Demo</title>
+</head>
+
+<body>
+    <h1>Forms Demo</h1>
+
+    <form action="/tacos">
+        <p>
+            <label for="username">Enter a Username</label>
+            <input id="username" type="text" placeholder="Username" name="username">
+        </p>
+        <p>
+            <label for="password">Enter a Password</label>
+            <input id="password" type="password" placeholder="Password" name="password">
+        </p>
+        <p>
+            <label for="color">Pick a color</label>
+            <input id="color" type="color" name="color">
+        </p>
+        <p>
+            <label for="number">Enter a number</label>
+            <input id="number" type="number" placeholder="Number" name="number">
+        </p>
+        <button>Submit</button>
+    </form>
+
+    <hr>
+    <h2>Reddit query</h2>
+    <form action="https://www.reddit.com/search/">
+        <p>
+            <label for="input">Choose a topic</label>
+            <input id="input" type="text" name="q">
+        </p>
+        <button>Submit</button>
+    </form>
+    <hr>
+    <h2>More Inputs</h2>
+    <form action="/birds">
+        <p>
+            <input type="checkbox" name="agree_tos" id="agree">
+            <label for="agree">I agree to the terms</label>
+        </p>
+        <p>
+            <label for="S">S</label>
+            <input type="radio" name="size" id="S" value="s">
+            <label for="M">M</label>
+            <input type="radio" name="size" id="M" value="m">
+            <label for="L">L</label>
+            <input type="radio" name="size" id="L" value="l">
+        </p>
+        <p>
+            <label for="meal">Please select an entree</label>
+            <select name="meal" id="meal">
+                <option value="">Choose an option</option>
+                <option value="fish">Fish</option>
+                <option value="veg">Vegetarian</option>
+                <option value="steak">Steak</option>
+            </select>
+        </p>
+        <p>
+            <label for="cheese">Amount of cheese:</label>
+            <input type="range" name="cheese_level" id="cheese" min="1" max="10">
+        </p>
+        <p>
+            <label for="requests">Any special requests?</label>
+            <br>
+            <textarea name="requests" id="requests"></textarea>
+        </p>
+        <button>Submit</button>
+    </form>
+    <hr>
+    <h2>Validations</h2>
+    <form action="/dummy">
+        <label for="first">Enter first name</label>
+        <input type="text" name="first" id="first" required>
+        <button>Submit</button>
+    </form>
+
+</body>
+
+</html>
